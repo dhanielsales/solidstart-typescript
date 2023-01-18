@@ -1,4 +1,4 @@
-import { Box } from '../../../components/Box';
+import { Box } from "../../../components/Box";
 
 export function HomePage() {
   return (
@@ -6,16 +6,16 @@ export function HomePage() {
       <Box
         class="my-box"
         styling={{
-          color: 'red',
-          transition: 'all 0.2s ease-in-out',
+          color: "red",
+          transition: "all 0.2s ease-in-out",
         }}
         pseudos={{
-          ':hover': {
-            background: 'blue',
+          ":hover": {
+            background: "blue",
           },
         }}
       >
-        Home
+        Home Page
       </Box>
     </section>
   );

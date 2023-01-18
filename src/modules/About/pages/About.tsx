@@ -1,9 +1,15 @@
-import { Box } from '../../../components/Box';
+import { Box } from "../../../components/Box";
 
 export function AboutPage() {
   return (
     <section>
-      <Box color="red">About</Box>
+      <Box
+        styling={{
+          color: "blue",
+        }}
+      >
+        About Page
+      </Box>
     </section>
   );
 }
