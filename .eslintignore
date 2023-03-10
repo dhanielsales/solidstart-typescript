@@ -1,27 +1,19 @@
+# General
 /*.js
 /*.json
 /**/*.d.ts
 
+# Folders
 node_modules
+.solid
+netlify
 
-.next
-
-build
-
+# Configs
 tsconfig.json
-
-jest.config.ts
-
 package.json
-
 vite.config.ts
-
-index.html
-
 .prettierrc.js
-
 .prettierignore
-
 postcss.config.cjs
-
 tailwind.config.cjs
+netlify.toml
