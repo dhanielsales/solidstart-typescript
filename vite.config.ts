@@ -1,6 +1,9 @@
 import path from 'path'
-import solid from "solid-start/vite";
 import { defineConfig } from "vite";
+
+import solid from "solid-start/vite";
+import vercel from "solid-start-vercel";
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
   resolve: {
@@ -16,11 +19,5 @@ export default defineConfig({
         "@root": path.resolve(__dirname, "./src/root"),
     }
   },
-  plugins: [
-    solid({
-      babel: (_, id) => ({
-        plugins: [["solid-styled", { source: id }]],
-      }),
-    }),
-  ],
+  plugins: [solid({ adapter: vercel({}) }), eslint()],
 });
