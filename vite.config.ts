@@ -2,7 +2,7 @@ import path from 'path'
 import { defineConfig } from "vite";
 
 import solid from "solid-start/vite";
-import vercel from "solid-start-vercel";
+import netlify from "solid-start-netlify";
 import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
@@ -19,5 +19,5 @@ export default defineConfig({
         "@root": path.resolve(__dirname, "./src/root"),
     }
   },
-  plugins: [solid({ adapter: vercel({}) }), eslint()],
+  plugins: [solid({ adapter: netlify() }), eslint()],
 });
